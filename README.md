@@ -61,14 +61,14 @@ POSTGRES_PASSWORD=kanbanpass
 POSTGRES_DB=kanban
 
 #Frontend
-KANBANFRONT_URL=http://localhost:3000
+KANBANFRONTEND_URL=http://localhost:3000
 NUXT_SECRET=chave-com-32-caracteres
 ```
 
 No diretório raiz, execute:
 ```sh
 docker compose up -d
-docker exec --env-file ./.env data python create_db.py
+docker compose exec data python create_db.py
 ```
 
 Abra o endereço http://localhost:3000 no seu navegador.
