@@ -1,15 +1,15 @@
-# Kanban MS (Micro Services) 
+# Kanban Deploy
 <img src="images/diagrama.png" alt="Diagrama de implantação">
 
-> Projeto de implantação por meio de orquestração com Docker Compose. O propósito deste projeto é realizar a implantação local dos micro-serviços: [Kanban Frontend](https://github.com/bpbastos/kanban-ms/tree/main/kanban-frontend) e [Kanban Data](https://github.com/bpbastos/kanban-ms/tree/main/kanban-data), ambos encontrados nesse repositório, além de configurá-los para utilizar o serviço de gerenciamento de usuários externo, o Back4app (disponível em https://back4app.com). Esses três micro-serviços fazem parte da aplicação web de gestão de projetos baseada no método Kanban. 
+> Projeto de implantação por meio de orquestração com Docker Compose. O propósito deste projeto é realizar a implantação local dos micro-serviços: [Kanban Frontend](https://github.com/bpbastos/kanban-frontend.git) e [Kanban Data](https://github.com/bpbastos/kanban-data.git), além de configurá-los para utilizar o serviço de gerenciamento de usuários externo, o [Back4app](https://back4app.com). Esses três micro-serviços fazem parte da SPA de gestão de projetos baseada no método Kanban.
 
 > Projeto de implantação desenvolvido como uma parte do trabalho de conclusão do terceiro e último módulo - Desenvolvimento Backend Avançado - da Pós-Graduação em Desenvolvimento FullStack da PUC-RIO. 
 
 ## Todo
 
-- [ ] Separar projetos em repositórios git diferentes
 - [ ] Desenvolver API Gateway (Apollo Federation)
 - [ ] Substituir o Back4app pelo projeto open source Parse Server - https://github.com/parse-community/parse-server
+- [x] ~~Separar projetos em repositórios git diferentes~~
 
 ## 💻 Pré-requisitos
 
@@ -34,12 +34,12 @@ RESTAPIKEY
 
 Faça clone do projeto:
 ```
-git clone https://github.com/bpbastos/kanban-ms.git
+git clone https://github.com/bpbastos/kanban-deploy.git
 ```
 
 Acesse o diretório do projeto com:
 ```
-cd kanban-ms
+cd kanban-deploy
 ```
 
 Crie um arquivo .env no diretório raiz do projeto com as seguintes variáveis:
@@ -68,6 +68,10 @@ NUXT_SECRET=chave-com-32-caracteres
 No diretório raiz, execute:
 ```sh
 docker compose up -d
+```
+
+Aguarde alguns segundos para inicialização do BD e execute:
+```sh
 docker compose exec data python create_db.py
 ```
 
