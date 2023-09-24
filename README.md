@@ -1,7 +1,7 @@
 # Kanban Deploy
 <img src="images/diagrama.png" alt="Diagrama de implantação">
 
-> Projeto de implantação por meio de orquestração com Docker Compose. O propósito deste projeto é realizar a implantação local dos micro-serviços: [Kanban Frontend](https://github.com/bpbastos/kanban-frontend.git) e [Kanban Data](https://github.com/bpbastos/kanban-data.git), além de configurá-los para utilizar o serviço de gerenciamento de usuários externo, o [Back4app](https://back4app.com). Esses três micro-serviços fazem parte da SPA de gestão de projetos baseada no método Kanban.
+> Projeto de implantação por meio de orquestração com Docker Compose. O propósito deste projeto é realizar a implantação local dos micro-serviços: [Kanban Frontend](https://github.com/bpbastos/kanban-frontend.git) e [Kanban Data](https://github.com/bpbastos/kanban-data.git), além de configurá-los para utilizar o módulo de gerenciamento de usuários do BaaS, [Back4app](https://back4app.com). Esses três micro-serviços fazem parte da SPA de gestão de projetos baseada no método Kanban.
 
 > Projeto de implantação desenvolvido como uma parte do trabalho de conclusão do terceiro e último módulo - Desenvolvimento Backend Avançado - da Pós-Graduação em Desenvolvimento FullStack da PUC-RIO. 
 
@@ -43,7 +43,9 @@ cd kanban-deploy
 ```
 
 Crie um arquivo .env no diretório raiz do projeto com as seguintes variáveis:
-> Substituia as variaveis BACK4APP_APPID e BACK4APP_RESTAPIKEY com as keys da sua conta no Back4app
+
+> Substituia as variáveis BACK4APP_APPID e BACK4APP_RESTAPIKEY com as keys da sua conta no Back4app. 
+> Crie uma chave única de 32 caracteres e atribua à variável NUXT_SECRET
 
 ```env
 #Back4app
