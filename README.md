@@ -9,6 +9,7 @@
 
 - [ ] Desenvolver API Gateway (Apollo Federation)
 - [ ] Substituir o Back4app pelo projeto open source Parse Server - https://github.com/parse-community/parse-server
+- [ ] Substituir o --links (depreciado) por networks
 - [x] ~~Separar projetos em repositórios git diferentes~~
 
 ## 💻 Pré-requisitos
