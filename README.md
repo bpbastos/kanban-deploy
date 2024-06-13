@@ -3,7 +3,7 @@
 
 > Projeto de implantação por meio de orquestração com Docker Compose. O propósito deste projeto é realizar a implantação local dos micro-serviços: [Kanban Frontend](https://github.com/bpbastos/kanban-frontend.git) e [Kanban Data](https://github.com/bpbastos/kanban-data.git), além de configurá-los para utilizar o módulo de gerenciamento de usuários do BaaS, [Back4app](https://back4app.com). Esses três micro-serviços fazem parte da SPA de gestão de projetos baseada no método Kanban.
 
-> Projeto de implantação desenvolvido como uma parte do trabalho de conclusão do terceiro e último módulo - Desenvolvimento Backend Avançado - da Pós-Graduação em Desenvolvimento FullStack da PUC-RIO. 
+> Projeto de implantação desenvolvido como uma parte do trabalho de conclusão do terceiro e último módulo - Desenvolvimento Backend Avançado - da Pós-Graduação em Engenharia de Software/Desenvolvimento FullStack da PUC-RIO. 
 
 ## Todo
 
